@@ -6,6 +6,6 @@ app.get('/names', (req, res) => {
   res.send('Akinbobola Olawolettdt');
 })
 
-app.listen(5000, () => {
-  console.log("Server is running on port 5000");
+app.listen(6000, () => {
+  console.log("Server is running on port 6000");
 })
