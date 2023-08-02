@@ -18,6 +18,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: |
         npm i
+        pm2 stop --name aws-cicd
         pm2 start app.js --name aws-cicd -- --port 6000
         pm2 save
         sudo service nginx restart 
